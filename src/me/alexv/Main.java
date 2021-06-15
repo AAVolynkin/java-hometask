@@ -7,5 +7,8 @@ public class Main {
 
         pr = new Practice2();
         pr.run();
+
+        pr = new Practice3();
+        pr.run();
     }
 }

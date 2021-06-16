@@ -72,6 +72,10 @@ public class Practice3 implements Practice {
         System.out.print("Укажите элемент Фибоначи: ");
         int n = scanner.nextInt();
 
+        //через рекурсию
+        System.out.println("Значение элемента: " + fib(n - 1));
+
+        /*
         int[] arr = {0,1,1};
 
         for (int i = 2; i < n; i++) {
@@ -80,6 +84,12 @@ public class Practice3 implements Practice {
             arr[1] = arr[2];
         }
         System.out.println("Значение элемента: " + arr[2]);
+         */
+    }
+    //5
+    private int fib(int n) {
+        if (n <= 1) return n;
+        return fib(n - 1) + fib(n - 2);
     }
 
     //6.	Заполните массив случайным числами и отсортируйте его. Используйте сортировку слиянием.

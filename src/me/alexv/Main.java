@@ -10,5 +10,8 @@ public class Main {
 
         pr = new Practice3();
         pr.run();
+
+        pr = new Practice4();
+        pr.run();
     }
 }

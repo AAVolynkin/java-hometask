@@ -6,12 +6,15 @@ public class Main {
         Practice pr;
 
         pr = new Practice2();
-        pr.run();
+        //pr.run();
 
         pr = new Practice3();
-        pr.run();
+        //pr.run();
 
         pr = new Practice4();
+        //pr.run();
+
+        pr = new Practice5();
         pr.run();
     }
 }

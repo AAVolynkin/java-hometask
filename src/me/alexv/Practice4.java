@@ -31,6 +31,10 @@ public class Practice4 implements Practice {
     private void task3() {
         String ban = "бяка";
         String censure = "[вырезано цензурой]";
+
+        System.out.println(arrStr.toString().replaceAll(ban,censure));
+
+        /*
         StringBuilder s;
 
         for (int i = 0; i < arrStr.length; i++) {
@@ -40,6 +44,7 @@ public class Practice4 implements Practice {
             }
             System.out.println( s.toString() );
         }
+        */
     }
 
     //4.	Имеются две строки. Найти количество вхождений одной (являющейся подстрокой) в другую.

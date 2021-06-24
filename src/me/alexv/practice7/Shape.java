@@ -1,6 +1,7 @@
 package me.alexv.practice7;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Shape {
     private double volume;
@@ -86,7 +87,7 @@ class Pyramid extends Shape {
 }
 
 class Box extends Shape {
-    private ArrayList<Shape> arrayList = new ArrayList<>();
+    private List<Shape> list = new ArrayList<>();
 
     public Box(double volume) {
         super(volume);
@@ -95,14 +96,15 @@ class Box extends Shape {
     public boolean add(Shape shape) {
         double availVolume = this.getVolume();
 
-        for (Shape s: arrayList) {
+        //available volume in box
+        for (Shape s: list) {
             availVolume -= s.getVolume();
         }
 
         if (availVolume < shape.getVolume())
             return false;
 
-        arrayList.add(shape);
+        list.add(shape);
         return true;
     }
 }

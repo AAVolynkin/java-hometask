@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Practice10Files {
+public class Practice11Files {
     //1.	Написать метод, который читает текстовый файл и возвращает его в виде списка строк.
     public static List<String> method1(String fileFullPath) {
         List<String> arrayList = new ArrayList<>();
